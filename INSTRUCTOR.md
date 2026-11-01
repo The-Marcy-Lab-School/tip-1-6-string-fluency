@@ -31,7 +31,7 @@ IndexError: string index out of range
 
 - **A:** `len(name)` → `17` · `i` → `16` · `name[i]` → `' '` · `i + 1` → `17` · `name[i + 1]` → `IndexError`.
 - **B:** 6 and 10 were counted for one string; in `"Industry City"` they land on `r` and `i`. The loop finds the spaces wherever they are.
-- **C:** `'l'` · `'S'` · `'l'` · `'M'` (-0 is just 0) · `'MARCY'`.
+- **C:** `l` · `S` · `l` · `M` (-0 is just 0) · `MARCY`.
 
 ### Modify
 
@@ -107,7 +107,7 @@ E: (718)  55-5 0142
 
 - **A:** `'171'` · `'855'` · `'50142'` · `(171) 855-50142`.
 - **B:** `mask_phone` only needs the end, and negative positions count from the end.
-- **C:** `'555'` · `'0142'` · `'0142'` · `'7185550142'` · `''`.
+- **C:** `[555]` · `[0142]` · `[0142]` · `[7185550142]` · `[]`.
 
 ### Modify
 
@@ -173,6 +173,7 @@ False
 
 - **A:** `'7'` · `False` · `'1'` (truthy).
 - **B:** one passing test doesn't prove a function: it passed because the first character happened to be allowed.
+- **C:** `1` (non-empty text, so it counts as true) · `False` · `True`.
 
 ### Modify
 
@@ -240,7 +241,7 @@ E: c
 
 - **A:** `bad` changes at `i = 13` (`c`), 14 (`e`), 15 (`l`), 16 (`l`) → `16`.
 - **B:** A returns the first match and stops; D keeps going. The form needs the first.
-- **C:** `13` · `'c'` · `'cell'`.
+- **C:** `13` · `c` · `cell`.
 
 ### Modify
 
@@ -313,7 +314,7 @@ E: [ (718) 555-0142 ]
 
 - **A:** `'(718)555-0142'` · `'718)555-0142'` · `'718555-0142'` · `'7185550142'`.
 - **B:** A printed the new string `strip()` gave back. E threw it away and printed the unchanged `raw`.
-- **C:** `'00482'` · `'ord-1'` · `'abc'` · `2` · `-1` · `False`.
+- **C:** `[00482]` · `[ord-1]` · `[abc]` · `2` · `-1` · `False`.
 
 ### Modify
 

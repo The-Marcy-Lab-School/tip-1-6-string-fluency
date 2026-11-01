@@ -69,20 +69,13 @@ The ✅ symbol marks a checkpoint where you show an instructor your work before 
 
 | File | Used in |
 | ---- | ------- |
+| `day1/review.py` | Review, Investigate C |
 | `day1/initials.py` | Predict & run, Modify |
 | `day1/make_monogram.py` | Make |
 
 ### Review
 
-You've written loops like this before. In the REPL:
-
-```python
-name = "Marcy Lab School"
-for i in range(len(name)):
-    print(i, name[i])
-```
-
-Before you run it: how many lines print, and what's on the last one? (16 lines; the last is `15 l`.)
+You've written loops like this before. Open `day1/review.py` and look at the REVIEW section. Before you run it: how many lines print, and what's on the last one? (16 lines; the last is `15 l`.)
 
 ### Predict & run
 
@@ -112,16 +105,7 @@ Self-check: A and C should match the goal. If your trace for D didn't predict a 
 
 **B) Compare.** `initials` worked for both `"Marcy Lab School"` and `"Industry City"` without any change. Why would `name[0] + name[6] + name[10]` work for only one of them?
 
-**C) Run these in the REPL:**
-
-```python
-name = "Marcy Lab School"
-name[-1]
-name[-6]
-name[len(name) - 1]
-name[-0]
-"marcy".upper()
-```
+**C) Predict, then run.** The lines are in the INVESTIGATE C section of `day1/review.py`. Write a prediction next to each one first.
 
 ✅ **Checkpoint:** Show an instructor your table, and say which position E's loop should stop before.
 
@@ -163,21 +147,13 @@ D gave `M LS` for `"Marcy  Lab School"` (two spaces). Make `initials` skip the e
 
 | File | Used in |
 | ---- | ------- |
+| `day2/review.py` | Review, Investigate C |
 | `day2/format_phone.py` | Predict & run, Modify |
 | `day2/make_dates.py` | Make |
 
 ### Review
 
-From Day 1: positions start at 0, and -1 is the last character. In the REPL:
-
-```python
-d = "7185550142"
-d[0]
-d[-1]
-d[len(d) - 1]
-```
-
-Before you run it: which two lines give the same character?
+From Day 1: positions start at 0, and -1 is the last character. Open `day2/review.py` and look at the REVIEW section. Before you run it: which two lines give the same character?
 
 ### Predict & run
 
@@ -205,16 +181,7 @@ Self-check: A and B match the goal. Before you move on, compare C and D: both go
 
 **B) Compare.** Why does `mask_phone` still give the right last 4 digits when there's a country code, but `format_phone` doesn't?
 
-**C) Run these in the REPL:**
-
-```python
-d = "7185550142"
-d[3:6]
-d[6:]
-d[-4:]
-d[:3] + d[3:]
-d[10:]
-```
+**C) Predict, then run.** The lines are in the INVESTIGATE C section of `day2/review.py`. Write a prediction next to each one first.
 
 ✅ **Checkpoint:** Show an instructor your table and your answer to B.
 
@@ -255,20 +222,13 @@ Predict, then run in the REPL: `"7185550142"[::-1]`. Then `"7185550142"[10]` and
 
 | File | Used in |
 | ---- | ------- |
+| `day3/review.py` | Review, Investigate C |
 | `day3/validate.py` | Predict & run, Modify |
 | `day3/make_email.py` | Make |
 
 ### Review
 
-In the REPL:
-
-```python
-"Cell" == "cell"
-"555" in "7185550142"
-"7185550142" == "(718) 555-0142"
-```
-
-Before you run it: which is `True`? The last one is why we clean before we compare.
+Open `day3/review.py` and look at the REVIEW section. Before you run it: which is `True`? The last one is why we clean before we compare.
 
 ### Predict & run (code review)
 
@@ -294,14 +254,7 @@ Open `day3/validate.py`. A teammate wrote two helpers. The goal at the top says 
 
 **B) Compare.** `only_phone_chars("(718) 555-0142")` gave the right answer. Why didn't that prove the function was right?
 
-**C) Run these in the REPL:**
-
-```python
-d = "7"
-d == "0" or "1"
-d in "01"
-"0" in "01"
-```
+**C) Predict, then run.** The lines are in the INVESTIGATE C section of `day3/review.py`. Write a prediction next to each one first.
 
 ✅ **Checkpoint:** Show an instructor your fixed helpers and tell them, in one sentence each, what the two bugs were.
 
@@ -344,20 +297,13 @@ False
 
 | File | Used in |
 | ---- | ------- |
+| `day4/review.py` | Review, Investigate C |
 | `day4/first_bad_char.py` | Predict & run, Modify |
 | `day4/make_find_at.py` | Make |
 
 ### Review
 
-From Day 3: answer "no" as soon as you find a problem, and "yes" only after the loop. Today you return a **position** instead of yes or no. In the REPL:
-
-```python
-s = "718-555-0142 cell"
-s.find("-")
-s.find("x")
-```
-
-Before you run it: what does `find` give back when there's no match?
+From Day 3: answer "no" as soon as you find a problem, and "yes" only after the loop. Today you return a **position** instead of yes or no. Open `day4/review.py` and look at the REVIEW section. Before you run it: what does `find` give back when there's no match?
 
 ### Predict & run
 
@@ -382,14 +328,7 @@ Self-check: A and B match the goal. For C, D and E, your explanation names the o
 
 **B) Compare.** A and D both find bad characters. Why does A give `13` and D give `16`? Which one does the form need?
 
-**C) Run these in the REPL:**
-
-```python
-s = "718-555-0142 cell"
-s.find("c")
-s[13]
-s[s.find("c"):]
-```
+**C) Predict, then run.** The lines are in the INVESTIGATE C section of `day4/review.py`. Write a prediction next to each one first.
 
 ✅ **Checkpoint:** Show an instructor your table for D and your answer to B.
 
@@ -428,6 +367,7 @@ no-at-sign.com
 
 | File | Used in |
 | ---- | ------- |
+| `day5/review.py` | Investigate C |
 | `day5/clean_methods.py` | Predict & run, Modify |
 | `day5/make_emails.py` | Make |
 | `day5/signups.py` | If there's time |
@@ -462,16 +402,7 @@ Self-check: A and C match the goal. If E surprised you, compare its first line w
 
 **B) Compare.** A and E both call `strip()`. Why did A's output change but E's didn't?
 
-**C) Run these in the REPL:**
-
-```python
-" 00482 ".strip()
-"ORD-1".lower()
-"a-b-c".replace("-", "")
-"Lab".find("b")
-"Lab".find("z")
-"7a".isdigit()
-```
+**C) Predict, then run.** The lines are in the INVESTIGATE C section of `day5/review.py`. Write a prediction next to each one first.
 
 ✅ **Checkpoint:** Show an instructor your table and your answer to B.
 
