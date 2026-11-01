@@ -1,4 +1,6 @@
 """
+Independent check: work alone, no AI, no notes. Write your prediction on paper first.
+
 Step	Task
 1. Predict the output.
 2. Debug (The output is right for this ZIP code. Make the function follow its spec for any ZIP code).

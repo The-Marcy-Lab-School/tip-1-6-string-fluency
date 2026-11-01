@@ -1,5 +1,5 @@
 """
-Sign-up form, step 4: the whole list
+Day 5, if there's time: the whole sign-up list
 
 A food pantry's text-alert sign-up form collected these numbers.
 Some people signed up twice, typing their number differently each time.
