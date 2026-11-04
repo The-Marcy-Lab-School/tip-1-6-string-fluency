@@ -1,4 +1,4 @@
-# Day 3 repair: `or` versus `in`
+# Day 3 reteach: `or` versus `in`
 # Work top to bottom: PREDICT -> RUN -> READ -> MODIFY -> MAKE.
 # Edit this file as you go.
 #
